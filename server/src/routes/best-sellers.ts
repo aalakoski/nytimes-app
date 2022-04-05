@@ -19,7 +19,7 @@ bestSellers.get('/:list', async (req: Request, res: Response) => {
   const { list } = req.params;
   if (!list) {
     return res
-      .status(409)
+      .status(400)
       .json({ message: `Bad request. Missing parameter 'list'.` });
   }
 

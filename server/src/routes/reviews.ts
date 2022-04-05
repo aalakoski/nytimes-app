@@ -9,7 +9,7 @@ reviews.get('/:isbn', async (req: Request, res: Response) => {
   const { isbn } = req.params;
   if (!isbn) {
     return res
-      .status(409)
+      .status(400)
       .json({ message: `Bad request. Missing parameter 'isbn'.` });
   }
 
