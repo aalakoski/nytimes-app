@@ -1,15 +1,6 @@
 import { useState } from 'react';
 import { getReviews } from '../api/index';
-
-interface Review {
-  url: string;
-  publication_dt: string;
-  byline: string;
-  book_title: string;
-  book_author: string;
-  summary: string;
-  isbn13: string[];
-}
+import { Review } from '../interfaces/review';
 
 const useReviews = (isbn: number) => {
   const [reviews, setReviews] = useState<Review[]>([]);
