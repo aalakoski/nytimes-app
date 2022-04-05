@@ -1,0 +1,19 @@
+.back {
+  border: none;
+  transition: all .2s;
+  color: var(--color-text);
+  height: 4rem;
+  width: 4rem;
+  margin: 0 .5rem 0 0;
+  padding: 1rem;
+  cursor: pointer;
+  background: var(--color-bg);
+}
+
+.back:hover {
+  background: var(--color-gray);
+}
+
+.back:active {
+  transform: scale(.8);
+}
