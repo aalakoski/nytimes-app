@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Header from '../components/header/Header';
 import Loading from '../components/loading/Loading';
-import { useBookList } from '../context/BookListContext';
+import useBookList from '../hooks/useBookList';
 import classes from './Lists.module.css';
 
 const Lists = () => {
@@ -13,7 +13,7 @@ const Lists = () => {
         <Loading />
       ) : (
         <ul className={classes.list}>
-          {list.map(({ display_name, list_name_encoded }, i, arr) => (
+          {list.map(({ display_name, list_name_encoded }) => (
             <li key={list_name_encoded} className={classes.item}>
               <Link
                 to={`/best-sellers/${list_name_encoded}`}
