@@ -20,8 +20,8 @@
 }
 
 .secondary {
-  border-color: var(--colorgray);
-  border-top-color: var(--colorsecondary);
+  border-color: var(--color-gray);
+  border-top-color: var(--color-secondary);
 }
 
 .small {
