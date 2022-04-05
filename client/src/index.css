@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Helvetica, Arial;
+  color: var(--color-text);
+  font-size: 1rem;
+  background: var(--color-bg);
+  overflow: hidden;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  padding-bottom: 2rem;
+  margin: .5rem;
+  overflow-y: auto;
+}
+main {
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 960px;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+:root {
+  --color-bg: #F6F6F7;
+  --color-white: #ffffff;
+  --color-gray: #CCCCCC;
+  --color-text: #172226;
+  --color-text-secondary: #2F454C;
+  --color-primary: #2191FB;
+  --color-secondary: #4E396A;
+}
